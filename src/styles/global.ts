@@ -17,9 +17,11 @@ const globalStyle = createGlobalStyle`
   }
 
   button{
-    background-color: none;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
     border: none;
     outline: none;
+    cursor: pointer;
   }
 
   a {

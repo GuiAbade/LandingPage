@@ -9,7 +9,14 @@ export const ItemList = styled.li`
   margin-right: 25px;
   font-weight: 500;
 
+  &: hover{
+    a{
+      color: #17a4d0;
+    }
+  }
+
   a {
    color: #1E255E;
+   transition: color 0.25 ease;
   }
 `;
