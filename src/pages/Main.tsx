@@ -1,6 +1,8 @@
 import ButtonContact from "../atoms/ButtonContact";
-import Frontend from "../templates/Frontend"
-import * as S from './styles'
+import Frontend from "../templates/Frontend";
+import * as S from './styles';
+import HeroHeaderImage from '../assets/hero-header-img.svg';
+import CardActivity from "../molecules/CardActivity";
 
 function Main() {
   return (
@@ -16,9 +18,12 @@ function Main() {
 
       </div>
 
-      <div>
-        <div>Teste</div>
-      </div>
+      <S.ColumnImage>
+
+        <CardActivity/>        
+        <img src={HeroHeaderImage} alt="Uma mulher fazendo uma pesquisa"/>
+
+      </S.ColumnImage>
     </S.Container>
   </Frontend>
   );
