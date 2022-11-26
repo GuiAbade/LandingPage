@@ -1,29 +1,14 @@
-import ButtonContact from "../atoms/ButtonContact";
 import Frontend from "../templates/Frontend";
 import * as S from './styles';
-import HeroHeaderImage from '../assets/hero-header-img.svg';
-import CardActivity from "../molecules/CardActivity";
+import ProductInformation from "../organismis/ProductInformation";
+import ProductStats from "../organismis/ProductStats";
 
 function Main() {
   return (
   <Frontend>
     <S.Container>
-      <div>
-        <h1>Design diven development of your web product</h1>
-        <h6>
-          We are a full service digital agency that biulds immersive user expirience.
-        </h6>
-
-        <ButtonContact/>
-
-      </div>
-
-      <S.ColumnImage>
-
-        <CardActivity/>        
-        <img src={HeroHeaderImage} alt="Uma mulher fazendo uma pesquisa"/>
-
-      </S.ColumnImage>
+      <ProductInformation/>
+      <ProductStats/>
     </S.Container>
   </Frontend>
   );
